@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-image: linear-gradient(45deg,#eeeeee, #ffffffff);
+}
+
+.container{
+
+    position: relative;
+    width: 350px;
+    height: 550px;
+
+    /* Aqui que altera o Tamanho do Card */
+}
+
+
+.container:hover .flip{ 
+    transform: rotateY(180deg);
+}
+
+/* No caso, vou trocar o que é "conteiner" pra classe que eu atribuir em qual quer projto */
+
+.flip{
+
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+     transform-style: preserve-3d;
+     transition: .5s;
+
+
+}
+
+.frente,.tras{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001c;
+    backface-visibility: hidden;
+
+    /* ver qual border fica MELHOR ! */
+
+    /* e ver (Cor e Transparencia ) */
+
+}
+
+.frente{
+    background-image: url(./assets/JC.jpg);
+    background-size: cover;
+}
+
+.tras{
+    background-color: gray ;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    
+}
