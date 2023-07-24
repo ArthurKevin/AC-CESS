@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+    <title> Minimalist-card </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card um</h3>
+                <p>1 Pedro 2:17</p>
+                <a href="#">Mais informações</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="card">
+        <div class="content">
+            <h2>02</h2>
+            <h3>Card dois</h3>
+            <p>O senhor é meu Pastor, e nada me faltará.</p>
+            <a href="#">Mais informações</a>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="card">
+        <div class="content">
+            <h2>03</h2>
+            <h3>Card três</h3>
+            <p>Deus Provedor.</p>
+            <a href="#">Mais informações</a>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script type="text/javascript" src="/animation-card-vanilla.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
+</html>
